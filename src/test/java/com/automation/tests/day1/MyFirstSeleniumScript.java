@@ -12,7 +12,7 @@ public class MyFirstSeleniumScript {
         //create chromedriver object
         ChromeDriver driver = new ChromeDriver();
         driver.get("http://google.com");
-
+        System.out.println("Hi");
 
 
 

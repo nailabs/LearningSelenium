@@ -11,6 +11,8 @@ public class CloseQuit {
 
         driver.get("http://practice.cybertekschool.com/open_new_tab");
         Thread.sleep(4000);
+       // driver.close();
+        driver.quit();
     }
 
 

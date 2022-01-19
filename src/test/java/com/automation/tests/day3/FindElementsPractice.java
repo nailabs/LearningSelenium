@@ -22,6 +22,14 @@ public class FindElementsPractice {
         WebElement signUp = driver.findElement(By.name("wooden_spoon"));
         signUp.click();
         Thread.sleep(5000);
+
+        WebElement message = driver.findElement(By.className("subheader"));
+        String actual = message.getText();
+        if (actual.equalsIgnoreCase("Thank you for signing up. Click the button below to return to the home page.")) {
+            System.out.println("Test passed");
+        }else{
+            System.out.println("Test failed");
+        }
         driver.quit();
 
     }

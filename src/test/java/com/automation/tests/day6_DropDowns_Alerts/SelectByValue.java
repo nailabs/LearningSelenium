@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class SelectByValue {
     public static void main(String[] args) {
-        WebDriver driver = DriverFactory.createAdriver("chrome");
+        WebDriver driver = DriverFactory.createDriver("chrome");
         driver.get("http://practice.cybertekschool.com/dropdown");
         BrowserUtils.wait(1);
 

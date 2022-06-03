@@ -10,7 +10,7 @@ import org.openqa.selenium.opera.OperaDriver;
 
 public class DriverFactory {
 
-    public static WebDriver createAdriver(String browserName) {
+    public static WebDriver createDriver(String browserName) {
         if (browserName.equalsIgnoreCase("chrome")) {
             WebDriverManager.chromedriver().setup();
             return new ChromeDriver();

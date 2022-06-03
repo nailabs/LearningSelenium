@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 
 public class Xpath {
     public static void main(String[] args) {
-        WebDriver driver = DriverFactory.createAdriver("chrome");
+        WebDriver driver = DriverFactory.createDriver("chrome");
         driver.get("http://practice.cybertekschool.com/login");
         driver.findElement(By.xpath("//label[text() = 'Username']/following-sibling::input"));
         driver.findElement(By.xpath("//label[text() = 'Password']/following-sibling::input"));

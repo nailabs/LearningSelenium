@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 public class NestedFrame {
     public static void main(String[] args) {
 
-        WebDriver driver = DriverFactory.createAdriver("chrome");
+        WebDriver driver = DriverFactory.createDriver("chrome");
         driver.get("http://practice.cybertekschool.com/nested_frames");
         driver.switchTo().frame("frame-top");
         driver.switchTo().frame("frame-middle");

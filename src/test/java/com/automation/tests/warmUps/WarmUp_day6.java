@@ -20,7 +20,7 @@ public class WarmUp_day6 {
 
     public static void ebayTest() throws InterruptedException {
 
-        driver = DriverFactory.createAdriver("chrome");
+        driver = DriverFactory.createDriver("chrome");
         driver.get("https://www.ebay.com/");
         driver.manage().window().maximize();
         driver.findElement(By.id("gh-ac")).sendKeys("java book");
@@ -34,7 +34,7 @@ public class WarmUp_day6 {
 
     public static void amazonTest() throws Exception {
 
-        driver = DriverFactory.createAdriver("chrome");
+        driver = DriverFactory.createDriver("chrome");
         driver.get("https://www.amazon.com/");
         driver.findElement(By.id("twotabsearchtextbox")).sendKeys("java book");
         driver.findElement(By.id("twotabsearchtextbox")).sendKeys(Keys.ENTER);
@@ -50,7 +50,7 @@ public class WarmUp_day6 {
     }
 
     public static void wikiTest() throws InterruptedException {
-        driver = DriverFactory.createAdriver("chrome");
+        driver = DriverFactory.createDriver("chrome");
         driver.get("https://www.wikipedia.org/");
         driver.findElement(By.id("searchInput")).sendKeys("Selenium(software)",Keys.ENTER);
         Thread.sleep(1000);

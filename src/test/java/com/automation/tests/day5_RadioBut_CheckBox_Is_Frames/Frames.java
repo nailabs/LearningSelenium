@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 public class Frames {
     public static void main(String[] args) {
 
-        WebDriver driver = DriverFactory.createAdriver("chrome");
+        WebDriver driver = DriverFactory.createDriver("chrome");
         driver.get("http://practice.cybertekschool.com/iframe");
 
         BrowserUtils.wait(4);

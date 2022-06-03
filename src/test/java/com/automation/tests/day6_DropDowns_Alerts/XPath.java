@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 
 public class XPath {
     public static void main(String[] args) {
-        WebDriver driver = DriverFactory.createAdriver("chrome");
+        WebDriver driver = DriverFactory.createDriver("chrome");
         driver.get("http://practice.cybertekschool.com/multiple_buttons");
         WebElement btn = driver.findElement(By.xpath("//button[@onclick='button1()']"));
         btn.click();
